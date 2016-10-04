@@ -53,4 +53,8 @@ input[type="text"] {
 .error {
   color: red;
   font-weight: bold;
+  clear: left;
+}
+.clearFloat{
+  clear: left;
 }

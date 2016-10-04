@@ -18,12 +18,14 @@ function NarrowItDownController(MenuSearchService) {
 
   list.found = MenuSearchService.getItems();
 
+  // list.check = MenuSearchService.checkList();
+
   list.getMatchedMenuItems = function (searchTerm) {
     if (items) {
         MenuSearchService.clearAll();
     }
     MenuSearchService.getMatchedMenuItems(list.searchTerm);
-    list.check = MenuSearchService.checkList();
+    // list.check = MenuSearchService.checkList();
     console.log("'found' is: ", list.found);
   }
 
@@ -80,12 +82,12 @@ function MenuSearchService($http, ApiBasePath) {
     }
   }
 
-  service.checkList = function () {
-    if (items.length === 0 ) {
-      return true;
-    }
-    return false;
-  }
+  // service.checkList = function () {
+  //   if (items.length === 0 ) {
+  //     return true;
+  //   }
+  //   return false;
+  // }
 }
 
 function FoundItemsDirective() {
