@@ -18,8 +18,6 @@ function NarrowItDownController(MenuSearchService) {
 
   list.found = MenuSearchService.getItems();
 
-  // list.check = MenuSearchService.checkList();
-
   list.getMatchedMenuItems = function (searchTerm) {
     if (items) {
         MenuSearchService.clearAll();
@@ -84,13 +82,6 @@ function MenuSearchService($http) {
       items.pop();
     }
   }
-
-  // service.checkList = function () {
-  //   if (items.length === 0 ) {
-  //     return true;
-  //   }
-  //   return false;
-  // }
 }
 
 function FoundItemsDirective() {
