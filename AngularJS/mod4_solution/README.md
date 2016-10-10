@@ -1,14 +1,11 @@
-# Mod3_solution 
-The idea here is for the user to search the descriptions of menu items. 
-Then, given the list of matches of his search, give the user the ability to throw the items they for sure don't want off the list, 
-thus narrowing it down to what they do want.
+# Mod4_solution 
+Practice for components, modules, and routing.
 
-Once the user enters something into the textbox and clicks the button, 
-your app will reach out to the server and retrieve the list of menu items for the entire menu. 
-Once retrieved, your task is to loop through all the items and, for each item, 
-do a simple check if the string being searched for by the user appears anywhere in the description of the item. 
-If it does, that item will be listed below the textbox.
+The idea here is use the restaurant menu REST API to create a master/detail view pair.
 
-The URL for the REST Endpoint is https://davids-restaurant.herokuapp.com/menu_items.json.
+The application has 3 views (i.e., 3 view states): home (home), categories list (categories), items list (items).
 
-More requirements could be seen through https://github.com/jhu-ep-coursera/fullstack-course5/blob/master/assignments/assignment3/Assignment-3.md
+The URL for the REST Endpoint is https://davids-restaurant.herokuapp.com/categories.json   
+https://davids-restaurant.herokuapp.com/menu_items.json?category=
+
+More requirements could be seen through https://github.com/jhu-ep-coursera/fullstack-course5/blob/master/assignments/assignment4/Assignment-4.md
