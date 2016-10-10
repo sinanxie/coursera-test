@@ -1,5 +1,6 @@
-<ul>
-  <li ng-repeat="item in $ctrl.items">
+<ul class="list-group">
+  <li ng-repeat="item in $ctrl.items"
+      class="list-group-item list-group-item-action">
       {{ item.id }}, {{ item.short_name }}, {{ item.name }},
       {{ item.description }}
   </li>
